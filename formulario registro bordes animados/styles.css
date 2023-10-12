@@ -5,7 +5,7 @@
 
 
 .separador {
-    height: 25px;
+    height: 38px;
 }
 
 body{
@@ -137,30 +137,40 @@ h1{
     margin-top: 5px;
     color: red;
     position: absolute;
+    font-family: Verdana;
+    font-size: 14px;
 }
 
 .char-limit-warning3 {
     margin-top: 5px;
     color: red;
     position: absolute;
+    font-family: Verdana;
+    font-size: 14px;
 }
 
 .char-limit-warning2 {
     margin-top: 5px;
     color: red;
     position: absolute;
+    font-family: Verdana;
+    font-size: 14px;
 }
 
 .char-limit-warning {
     margin-top: 5px;
     color: red;
     position: absolute;
+    font-family: Verdana;
+    font-size: 14px;
 }
 
 .passwordMismatchWarning {
     margin-top: 35px;
     color: red;
     position: relative;
+    font-family: Verdana;
+    font-size: 14px;
 }
 
 .contraseña{
