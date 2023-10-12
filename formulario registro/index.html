@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <H1>Registrate!</H1>
+        <form>
+            <div class="separador"></div>
+            <label class="label-usuario" for="usuario">Usuario:</label>
+            <div class="password-input">
+                <input type="text" id="usuario" class="usuario" name="usuario">
+            </div>
+            <div class="separador"></div>
+            <label for="password1" class="contraseña">Contraseña:</label>
+            <div class="password-input">
+                <input class="password-content" type="password" id="password1" name="password1">
+                <img src="eye.png" class="toggle-password" data-target="password1" alt="Mostrar contraseña">
+            </div>
+            <div id="charLimitWarning" class="char-limit-warning" style="display: none;">
+                Solo puedes ingresar hasta 18 caracteres.
+            </div>
+            <div id="charLimitWarning3" class="char-limit-warning3" style="display: none;">
+                La contraseña debe tener mas de 7 caracteres.
+            </div>
+            <div class="separador"></div>
+            <label for="password2" class="repetir-contraseña">Repetir contraseña:</label>
+            <div class="password-input">
+                <input class="password-content" type="password" id="password2" name="password2">
+                <img src="eye.png" class="toggle-password" data-target="password2" alt="Mostrar contraseña">
+            </div>
+            <div id="charLimitWarning2" class="char-limit-warning2" style="display: none;">
+                Solo puedes ingresar hasta 18 caracteres.
+            </div>
+            <div id="charLimitWarning4" class="char-limit-warning4" style="display: none;">
+                La contraseña debe tener mas de 7 caracteres.
+            </div>
+            <div class="passwordMismatchWarning" id="passwordMismatchWarning" style="display: none; ">
+                Las contraseñas no coinciden.
+            </div>
+            <input class="boton" type="submit" value="Enviar" disabled>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
