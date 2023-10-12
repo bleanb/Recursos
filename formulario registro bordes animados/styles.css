@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'ClassicalDiary';
+    src: url('ClassicalDiary-Regular Demo.ttf') format('truetype');
+}
+
+
+.separador {
+    height: 25px;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-formulario{
+    width: 400px;
+    height: 550px;
+    background-color: #662549;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 5px 22px -10px black;
+    background-image: linear-gradient(to bottom, #662549,#7D3E5E,#8F4A6C);
+    position:relative;
+    overflow: hidden;
+}
+
+.contenedor-formulario span:nth-child(1){
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to right, transparent,#551f3e );
+    animation: animate-1 2s linear infinite;
+}
+
+@keyframes animate-1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.contenedor-formulario span:nth-child(2){
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent,#551f3e );
+    animation: animate-2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate-2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.contenedor-formulario span:nth-child(3){
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to left, transparent,#551f3e );
+    animation: animate-3 2s linear infinite;
+    
+}
+
+@keyframes animate-3{
+    0%{ 
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.contenedor-formulario span:nth-child(4){
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(to top, transparent,#551f3e );
+    animation: animate-4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate-4{
+    0%{ 
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+
+
+h1{
+    font-family: 'ClassicalDiary';
+    margin-top: -450px;
+    position: absolute;
+}
+.repetir-contraseña {
+    margin-left: -45px;
+}
+
+.password-input {
+    position: relative;
+    
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    left: 175px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+
+}
+
+.char-limit-warning4 {
+    margin-top: 5px;
+    color: red;
+    position: absolute;
+}
+
+.char-limit-warning3 {
+    margin-top: 5px;
+    color: red;
+    position: absolute;
+}
+
+.char-limit-warning2 {
+    margin-top: 5px;
+    color: red;
+    position: absolute;
+}
+
+.char-limit-warning {
+    margin-top: 5px;
+    color: red;
+    position: absolute;
+}
+
+.passwordMismatchWarning {
+    margin-top: 35px;
+    color: red;
+    position: relative;
+}
+
+.contraseña{
+    margin-left: -5px;
+}
+
+#password2.error {
+    color: red;
+}
+
+#password1.error {
+    color: red;
+}
+
+.boton {
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #AE445A;
+    margin-top: 30px;
+    position: relative;
+    left: 50px;
+    font-family: 'ClassicalDiary';
+}
+
+body {
+    background-color: #1d1a39;
+}
+
+.usuario {
+    background-color: #e8bcb9;
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+    position: relative;
+}
+
+#password1 {
+    background-color: #e8bcb9;
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+#password2 {
+    background-color: #e8bcb9;
+    height: 30px;
+    width: 200px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.label-usuario {
+    font-family: 'ClassicalDiary';
+    font-size: 26px;
+    position: relative;
+    margin-left: 22px;
+    color: #f39f5a;
+
+}
+
+
+label {
+    font-family: 'ClassicalDiary';
+    font-size: 26px;
+    left: 35px;
+    position: relative;
+    color: #f39f5a;
+}
+
+#password1[type="password"] {
+    font-size: 25px;
+}
+
+#password2[type="password"] {
+    font-size: 25px;
+}
+
+#usuario.usuario{
+    margin-top: 20px;
+}
